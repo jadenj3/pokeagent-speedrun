@@ -1,3 +1,7 @@
+# Note: This project uses uv for dependency management.
+# Run `uv sync` to install dependencies instead of pip.
+# This requirements.txt is kept for backwards compatibility.
+
 flask==3.0.2
 flask-socketio==5.3.6
 python-socketio==5.11.1
@@ -5,6 +9,7 @@ python-engineio==4.9.0
 numpy==1.26.4
 opencv-python==4.9.0.80
 pillow==10.2.0
+pygame==2.6.1
 requests>=2.32.2  # Updated to resolve conflicts
 python-dotenv==1.0.1
 eventlet==0.35.2  # Required for Flask-SocketIO
@@ -18,7 +23,6 @@ requests>=2.25.0
 pydantic>=2.0.0
 
 # Game Boy Advance emulator dependencies
-pygba==0.2.9      # For Game Boy emulation
 mgba==0.10.2      # For GBA emulation
 
 # Additional dependencies to resolve conflicts
@@ -43,3 +47,6 @@ accelerate>=0.25.0    # Model acceleration
 sentencepiece>=0.1.99  # Tokenization support
 protobuf>=3.20.0      # Protocol buffers
 cffi>=1.6
+
+# OCR Dependencies
+pytesseract>=0.3.10   # OCR for text detection
